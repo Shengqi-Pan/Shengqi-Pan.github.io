@@ -28,7 +28,7 @@
 <meta property="og:description" content="学习总结面试基础知识，包括：  数据结构 数据库 计算机网络 操作系统">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-04-03T04:57:40.000Z">
-<meta property="article:modified_time" content="2020-04-03T12:05:18.210Z">
+<meta property="article:modified_time" content="2020-04-03T12:53:09.562Z">
 <meta property="article:author" content="John Pan">
 <meta name="twitter:card" content="summary">
 
@@ -189,7 +189,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-04-03 12:57:40 / 修改时间：20:05:18" itemprop="dateCreated datePublished" datetime="2020-04-03T12:57:40+08:00">2020-04-03</time>
+              <time title="创建时间：2020-04-03 12:57:40 / 修改时间：20:53:09" itemprop="dateCreated datePublished" datetime="2020-04-03T12:57:40+08:00">2020-04-03</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,14 +220,13 @@
 <li>操作系统</li>
 </ul>
 <a id="more"></a>
-
 <h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><p>元胞自动机trick</p>
-<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><h2 id="1-基本概念"><a href="#1-基本概念" class="headerlink" title="1. 基本概念"></a>1. 基本概念</h2><p>DB: 数据库</p>
+<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>DB: 数据库</p>
 <p>DBS: 数据库系统，即DB+DBMS</p>
 <p>DBMS: 数据库管理系统</p>
 <p>DBA: 数据库管理员</p>
 <p>三大经典模型：层次模型、网状模型、关系模型</p>
-<h2 id="2-关系模型"><a href="#2-关系模型" class="headerlink" title="2. 关系模型"></a>2. 关系模型</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>关系：一个关系就是一个table</p>
+<h2 id="关系模型"><a href="#关系模型" class="headerlink" title="关系模型"></a>关系模型</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>关系：一个关系就是一个table</p>
 <p>关系模型的三个要素：</p>
 <ul>
 <li>基本结构：Relation/Table</li>
@@ -265,7 +264,7 @@
 <p>等值连接：即$\theta$-连接条件取等于</p>
 <p>自然连接：即将等值连接中相同元素（列）合并</p>
 <h3 id="关系演算（待完善）"><a href="#关系演算（待完善）" class="headerlink" title="关系演算（待完善）"></a>关系演算（待完善）</h3><h4 id="元组运算"><a href="#元组运算" class="headerlink" title="元组运算"></a>元组运算</h4><h4 id="关系域运算"><a href="#关系域运算" class="headerlink" title="关系域运算"></a>关系域运算</h4><h4 id="安全性"><a href="#安全性" class="headerlink" title="安全性"></a>安全性</h4><p>$\and \or$</p>
-<h2 id="3-SQL语言基础"><a href="#3-SQL语言基础" class="headerlink" title="3. SQL语言基础"></a>3. SQL语言基础</h2><p>DDL: Create, Alter, Drop</p>
+<h2 id="SQL语言基础"><a href="#SQL语言基础" class="headerlink" title="SQL语言基础"></a>SQL语言基础</h2><p>DDL: Create, Alter, Drop</p>
 <p>DML: Insert, Delete, Update, Select</p>
 <p>DCL: Grant, Revoke</p>
 <h3 id="DDL"><a href="#DDL" class="headerlink" title="DDL"></a>DDL</h3><p>SQL-92中定义的数据类型</p>
@@ -279,26 +278,17 @@
 <li>time：时间</li>
 </ul>
 <h4 id="新建"><a href="#新建" class="headerlink" title="新建"></a>新建</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--新建表</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> Student(S<span class="comment"># char(8) not null, Sname char(10), Ssex char(2), Sage integer, D# char(2), Sclass char(char(6));</span></span><br><span class="line"><span class="comment">--新建数据库</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> Student;</span><br></pre></td></tr></table></figure>
-
 <h4 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--增加Saddr和PID两列</span></span><br><span class="line"><span class="keyword">Alter</span> <span class="keyword">Table</span> Student <span class="keyword">Add</span> Saddr <span class="built_in">char</span>[<span class="number">40</span>], PID <span class="built_in">char</span>[<span class="number">18</span>];</span><br><span class="line"><span class="comment">--修改Sname的数据类型</span></span><br><span class="line"><span class="keyword">Alter</span> <span class="keyword">Table</span> Student <span class="keyword">Modify</span> Sname cahr(<span class="number">10</span>);</span><br><span class="line"><span class="comment">--删除Sname必须唯一的约束</span></span><br><span class="line"><span class="keyword">Alter</span> <span class="keyword">Table</span> Student <span class="keyword">Drop</span> <span class="keyword">Unique</span>(Sname);</span><br></pre></td></tr></table></figure>
-
 <h4 id="撤销"><a href="#撤销" class="headerlink" title="撤销"></a>撤销</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--撤销基本表</span></span><br><span class="line"><span class="keyword">Drop</span> <span class="keyword">Table</span> Student;</span><br><span class="line"><span class="comment">--撤销数据库</span></span><br><span class="line"><span class="keyword">Drop</span> <span class="keyword">database</span> SCT;</span><br></pre></td></tr></table></figure>
-
 <h4 id="指定与关闭"><a href="#指定与关闭" class="headerlink" title="指定与关闭"></a>指定与关闭</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--使用和关闭Student数据库</span></span><br><span class="line"><span class="keyword">use</span> Student</span><br><span class="line"><span class="keyword">close</span> Student</span><br></pre></td></tr></table></figure>
-
 <h3 id="DML"><a href="#DML" class="headerlink" title="DML"></a>DML</h3><h4 id="增"><a href="#增" class="headerlink" title="增"></a>增</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--单一插入</span></span><br><span class="line"><span class="keyword">Insert</span> <span class="keyword">Into</span> Student</span><br><span class="line"><span class="keyword">Values</span>(<span class="string">'98030101'</span>, <span class="string">'张三'</span>, <span class="string">'男'</span>, <span class="number">20</span>, <span class="string">'03'</span>, <span class="string">'980301'</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">--将查询结果插入</span></span><br><span class="line"><span class="keyword">Insert</span> <span class="keyword">Into</span> Student</span><br><span class="line">Select...</span><br></pre></td></tr></table></figure>
-
 <h4 id="查"><a href="#查" class="headerlink" title="查"></a>查</h4><p>简单查询</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--投影+选择</span></span><br><span class="line"><span class="keyword">Select</span> Sname, Sage</span><br><span class="line"><span class="keyword">From</span> Student</span><br><span class="line"><span class="keyword">Where</span> Sage &lt;= <span class="number">19</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--投影全部列</span></span><br><span class="line"><span class="keyword">Select</span> * <span class="keyword">From</span> Student;WW</span><br><span class="line"></span><br><span class="line"><span class="comment">--检索并去重</span></span><br><span class="line"><span class="keyword">Select</span> <span class="keyword">DISTINCT</span> S<span class="comment">#</span></span><br><span class="line"><span class="keyword">From</span> SC</span><br><span class="line"><span class="keyword">Where</span> Score &gt; <span class="number">80</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--检索并排序</span></span><br><span class="line"><span class="comment">--由小到大就是ASC，由大到小就是DESC</span></span><br><span class="line"><span class="keyword">Select</span> S<span class="comment"># From SC Where C#='002' and Score&gt;80</span></span><br><span class="line"><span class="keyword">Order</span> <span class="keyword">By</span> Score <span class="keyword">DESC</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--模糊查询</span></span><br><span class="line"><span class="comment">--'%'匹配零个或多个字符</span></span><br><span class="line"><span class="comment">--'_'匹配任意单个字符</span></span><br><span class="line"><span class="keyword">Select</span> Sname <span class="keyword">From</span> Student </span><br><span class="line"><span class="keyword">Where</span> Sname [<span class="keyword">Like</span>|<span class="keyword">Not</span> <span class="keyword">Like</span>] [<span class="string">'张%'</span>|<span class="string">'张__'</span>]</span><br></pre></td></tr></table></figure>
-
 <p>多表联合查询</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--等值连接</span></span><br><span class="line"><span class="comment">--如果两个表的属性名相同，需要采用表名.属性名方式来限定该属性是属于哪一个表</span></span><br><span class="line"><span class="keyword">Select</span> Sname <span class="keyword">From</span> Student, SC</span><br><span class="line"><span class="keyword">Where</span> Student.S<span class="comment">#=SC.S# and SC.C#='001'</span></span><br><span class="line"><span class="keyword">Order</span> <span class="keyword">By</span> Score <span class="keyword">DESC</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">--不等值连接</span></span><br><span class="line"><span class="comment">--as用于处理同名</span></span><br><span class="line"><span class="comment">--T1和T2为同表</span></span><br><span class="line"><span class="keyword">Select</span> T1.Tname <span class="keyword">as</span> Teacher1, T2.Tname <span class="keyword">as</span> Teacher2</span><br><span class="line"><span class="keyword">From</span> Teacher T2, Teacher T2</span><br><span class="line"><span class="keyword">Where</span> T1.Salary&gt;T2.Salary;</span><br></pre></td></tr></table></figure>
-
 <h4 id="删"><a href="#删" class="headerlink" title="删"></a>删</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--删除满足条件的元组</span></span><br><span class="line"><span class="comment">--若没有Where则删除所有元组</span></span><br><span class="line"><span class="keyword">Delete</span> <span class="keyword">From</span> SC <span class="keyword">Where</span> S<span class="comment">#='98030101';</span></span><br></pre></td></tr></table></figure>
-
 <h4 id="改"><a href="#改" class="headerlink" title="改"></a>改</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--修改满足条件的元组</span></span><br><span class="line"><span class="comment">--若没有Where则修改所有元组</span></span><br><span class="line"><span class="keyword">Update</span> Teacher</span><br><span class="line"><span class="keyword">Set</span> Salary = Salary * <span class="number">1.05</span> Where...;</span><br></pre></td></tr></table></figure>
-
-<h2 id="4-SQL语言进阶"><a href="#4-SQL语言进阶" class="headerlink" title="4. SQL语言进阶"></a>4. SQL语言进阶</h2><h3 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h3><h3 id="结果运算"><a href="#结果运算" class="headerlink" title="结果运算"></a>结果运算</h3><h3 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h3><h3 id="实现关系代数操作"><a href="#实现关系代数操作" class="headerlink" title="实现关系代数操作"></a>实现关系代数操作</h3><h2 id="5-数据库完整性与安全性及SQL实现"><a href="#5-数据库完整性与安全性及SQL实现" class="headerlink" title="5. 数据库完整性与安全性及SQL实现"></a>5. 数据库完整性与安全性及SQL实现</h2><h2 id="数据库设计范式"><a href="#数据库设计范式" class="headerlink" title="数据库设计范式"></a>数据库设计范式</h2><p>第一范式(1NF)：</p>
+<h2 id="SQL语言进阶"><a href="#SQL语言进阶" class="headerlink" title="SQL语言进阶"></a>SQL语言进阶</h2><h3 id="子查询"><a href="#子查询" class="headerlink" title="子查询"></a>子查询</h3><h3 id="结果运算"><a href="#结果运算" class="headerlink" title="结果运算"></a>结果运算</h3><h3 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h3><h3 id="实现关系代数操作"><a href="#实现关系代数操作" class="headerlink" title="实现关系代数操作"></a>实现关系代数操作</h3><h2 id="数据库完整性与安全性及SQL实现"><a href="#数据库完整性与安全性及SQL实现" class="headerlink" title="数据库完整性与安全性及SQL实现"></a>数据库完整性与安全性及SQL实现</h2><h2 id="数据库设计范式"><a href="#数据库设计范式" class="headerlink" title="数据库设计范式"></a>数据库设计范式</h2><p>第一范式(1NF)：</p>
 <p>第二范式(2NF)：</p>
 <p>第三范式(3NF)：</p>
 <p>BCNF：</p>
@@ -380,7 +370,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构"><span class="nav-number">1.</span> <span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库"><span class="nav-number">2.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-基本概念"><span class="nav-number">2.1.</span> <span class="nav-text">1. 基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-关系模型"><span class="nav-number">2.2.</span> <span class="nav-text">2. 关系模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念"><span class="nav-number">2.2.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系代数"><span class="nav-number">2.2.2.</span> <span class="nav-text">关系代数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本操作"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展操作"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">扩展操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系演算（待完善）"><span class="nav-number">2.2.3.</span> <span class="nav-text">关系演算（待完善）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#元组运算"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">元组运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关系域运算"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">关系域运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安全性"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">安全性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-SQL语言基础"><span class="nav-number">2.3.</span> <span class="nav-text">3. SQL语言基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DDL"><span class="nav-number">2.3.1.</span> <span class="nav-text">DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建"><span class="nav-number">2.3.1.1.</span> <span class="nav-text">新建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改"><span class="nav-number">2.3.1.2.</span> <span class="nav-text">修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销"><span class="nav-number">2.3.1.3.</span> <span class="nav-text">撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定与关闭"><span class="nav-number">2.3.1.4.</span> <span class="nav-text">指定与关闭</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DML"><span class="nav-number">2.3.2.</span> <span class="nav-text">DML</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#增"><span class="nav-number">2.3.2.1.</span> <span class="nav-text">增</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查"><span class="nav-number">2.3.2.2.</span> <span class="nav-text">查</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删"><span class="nav-number">2.3.2.3.</span> <span class="nav-text">删</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#改"><span class="nav-number">2.3.2.4.</span> <span class="nav-text">改</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-SQL语言进阶"><span class="nav-number">2.4.</span> <span class="nav-text">4. SQL语言进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子查询"><span class="nav-number">2.4.1.</span> <span class="nav-text">子查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果运算"><span class="nav-number">2.4.2.</span> <span class="nav-text">结果运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分组查询"><span class="nav-number">2.4.3.</span> <span class="nav-text">分组查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现关系代数操作"><span class="nav-number">2.4.4.</span> <span class="nav-text">实现关系代数操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-数据库完整性与安全性及SQL实现"><span class="nav-number">2.5.</span> <span class="nav-text">5. 数据库完整性与安全性及SQL实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库设计范式"><span class="nav-number">2.6.</span> <span class="nav-text">数据库设计范式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机网络"><span class="nav-number">3.</span> <span class="nav-text">计算机网络</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作系统"><span class="nav-number">4.</span> <span class="nav-text">操作系统</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构"><span class="nav-number">1.</span> <span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据库"><span class="nav-number">2.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本概念"><span class="nav-number">2.1.</span> <span class="nav-text">基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关系模型"><span class="nav-number">2.2.</span> <span class="nav-text">关系模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#概念"><span class="nav-number">2.2.1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系代数"><span class="nav-number">2.2.2.</span> <span class="nav-text">关系代数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本操作"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">基本操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#扩展操作"><span class="nav-number">2.2.2.2.</span> <span class="nav-text">扩展操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关系演算（待完善）"><span class="nav-number">2.2.3.</span> <span class="nav-text">关系演算（待完善）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#元组运算"><span class="nav-number">2.2.3.1.</span> <span class="nav-text">元组运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关系域运算"><span class="nav-number">2.2.3.2.</span> <span class="nav-text">关系域运算</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安全性"><span class="nav-number">2.2.3.3.</span> <span class="nav-text">安全性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL语言基础"><span class="nav-number">2.3.</span> <span class="nav-text">SQL语言基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DDL"><span class="nav-number">2.3.1.</span> <span class="nav-text">DDL</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#新建"><span class="nav-number">2.3.1.1.</span> <span class="nav-text">新建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改"><span class="nav-number">2.3.1.2.</span> <span class="nav-text">修改</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#撤销"><span class="nav-number">2.3.1.3.</span> <span class="nav-text">撤销</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指定与关闭"><span class="nav-number">2.3.1.4.</span> <span class="nav-text">指定与关闭</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#DML"><span class="nav-number">2.3.2.</span> <span class="nav-text">DML</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#增"><span class="nav-number">2.3.2.1.</span> <span class="nav-text">增</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查"><span class="nav-number">2.3.2.2.</span> <span class="nav-text">查</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#删"><span class="nav-number">2.3.2.3.</span> <span class="nav-text">删</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#改"><span class="nav-number">2.3.2.4.</span> <span class="nav-text">改</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SQL语言进阶"><span class="nav-number">2.4.</span> <span class="nav-text">SQL语言进阶</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#子查询"><span class="nav-number">2.4.1.</span> <span class="nav-text">子查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#结果运算"><span class="nav-number">2.4.2.</span> <span class="nav-text">结果运算</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分组查询"><span class="nav-number">2.4.3.</span> <span class="nav-text">分组查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实现关系代数操作"><span class="nav-number">2.4.4.</span> <span class="nav-text">实现关系代数操作</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库完整性与安全性及SQL实现"><span class="nav-number">2.5.</span> <span class="nav-text">数据库完整性与安全性及SQL实现</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库设计范式"><span class="nav-number">2.6.</span> <span class="nav-text">数据库设计范式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计算机网络"><span class="nav-number">3.</span> <span class="nav-text">计算机网络</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#操作系统"><span class="nav-number">4.</span> <span class="nav-text">操作系统</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -485,7 +475,7 @@
 <script src="/js/schemes/pisces.js"></script>
 
 
-<script src="/js/next-boot.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -507,6 +497,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+    
 
   
 
