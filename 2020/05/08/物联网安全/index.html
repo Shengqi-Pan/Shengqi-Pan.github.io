@@ -20,30 +20,81 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="记录计算机科学相关笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="John Pan&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="第一章 物联网概述物联网的定义★物联网的定义★：物联网是基于互联网、传统电信网等信息承载体，让所有能够寻址的物理实体实现互联互通，从而实现某种特定的功能业务的网络">
+<meta property="og:type" content="article">
+<meta property="og:title" content="物联网安全">
+<meta property="og:url" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/index.html">
 <meta property="og:site_name" content="John Pan&#39;s Blog">
-<meta property="og:description" content="记录计算机科学相关笔记">
+<meta property="og:description" content="第一章 物联网概述物联网的定义★物联网的定义★：物联网是基于互联网、传统电信网等信息承载体，让所有能够寻址的物理实体实现互联互通，从而实现某种特定的功能业务的网络">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578055753857.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578055774001.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578057601347.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578058129527.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578058957926.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578061323770.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578104171640.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578104537125.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578104815060.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578105571989.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578108007426.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578107155618.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578108280891.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578109983211.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578110030148.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120364046.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120588756.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120751644.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120827999.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120846172.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578121593653.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578124158702.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578125818932.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578126010179.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131214978.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131470963.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131492058.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131519328.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131544974.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578137749024.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578138820051.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578295233992.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578455814648.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578465317262.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578466439551.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578467122506.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578467139935.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578470362259.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578555149504.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578555373417.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578555537078.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578556557005.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578556575453.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578557344123.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578571033281.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578571233111.png">
+<meta property="og:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578572048461.png">
+<meta property="article:published_time" content="2020-05-08T06:16:29.000Z">
+<meta property="article:modified_time" content="2020-05-08T06:19:37.910Z">
 <meta property="article:author" content="John Pan">
+<meta property="article:tag" content="物联网,网络安全">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578055753857.png">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>John Pan's Blog</title>
+  <title>物联网安全 | John Pan's Blog</title>
   
 
 
@@ -156,13 +207,14 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/08/%E5%A4%8D%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -174,10 +226,9 @@
       <meta itemprop="name" content="John Pan's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/08/%E5%A4%8D%E4%B9%A0/" class="post-title-link" itemprop="url">复习</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          物联网安全
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -187,7 +238,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-05-08 14:17:06 / 修改时间：14:17:45" itemprop="dateCreated datePublished" datetime="2020-05-08T14:17:06+08:00">2020-05-08</time>
+              <time title="创建时间：2020-05-08 14:16:29 / 修改时间：14:19:37" itemprop="dateCreated datePublished" datetime="2020-05-08T14:16:29+08:00">2020-05-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
+                </span>
             </span>
 
           
@@ -201,7 +261,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="第一章-物联网概述"><a href="#第一章-物联网概述" class="headerlink" title="第一章 物联网概述"></a>第一章 物联网概述</h1><h2 id="物联网的定义★"><a href="#物联网的定义★" class="headerlink" title="物联网的定义★"></a>物联网的定义★</h2><p>物联网的定义★：物联网是基于互联网、传统电信网等信息承载体，让所有<strong>能够寻址</strong>的物理实体实现<strong>互联互通</strong>，从而实现某种特定的<strong>功能业务</strong>的网络</p>
+        <h1 id="第一章-物联网概述"><a href="#第一章-物联网概述" class="headerlink" title="第一章 物联网概述"></a>第一章 物联网概述</h1><h2 id="物联网的定义★"><a href="#物联网的定义★" class="headerlink" title="物联网的定义★"></a>物联网的定义★</h2><p>物联网的定义★：物联网是基于互联网、传统电信网等信息承载体，让所有<strong>能够寻址</strong>的物理实体实现<strong>互联互通</strong>，从而实现某种特定的<strong>功能业务</strong>的网络</p>
+<a id="more"></a>
 <p>物联网的特点★：</p>
 <ul>
 <li>联网终端规模化</li>
@@ -312,8 +373,8 @@
 <ul>
 <li>防御方法：数字签名</li>
 </ul>
-<h2 id="密码学的基本概念"><a href="#密码学的基本概念" class="headerlink" title="密码学的基本概念"></a>密码学的基本概念</h2><p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578055753857.png" alt="1578055753857"></p>
-<p><strong><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578055774001.png" alt="1578055774001"></strong></p>
+<h2 id="密码学的基本概念"><a href="#密码学的基本概念" class="headerlink" title="密码学的基本概念"></a>密码学的基本概念</h2><p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578055753857.png" alt="1578055753857"></p>
+<p><strong><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578055774001.png" alt="1578055774001"></strong></p>
 <p>科克霍夫假设：密码分析者知道双方使用的<strong>密码系统</strong>，包括明文的<strong>统计特性</strong>、<strong>加密解密体质</strong>等、唯一不知道的是密钥。</p>
 <p>密码学安全攻击分类：（难度越来越小）</p>
 <ul>
@@ -348,35 +409,33 @@
 </li>
 <li><p>解密：$x=\cfrac1 \alpha (y-\beta )(mod 26)$</p>
 </li>
-<li><p>注意$\cfrac1 \alpha​$是逆元而不是倒数</p>
+<li><p>注意$\cfrac1 \alpha$是逆元而不是倒数</p>
 </li>
 <li><p>逆元计算举例：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578057601347.png" alt="1578057601347"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578057601347.png" alt="1578057601347"></p>
 </li>
 </ul>
 </li>
 <li><p>安全性：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578058129527.png" alt="1578058129527"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578058129527.png" alt="1578058129527"></p>
 <ul>
-<li>解密举例：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578058957926.png" alt="1578058957926"></li>
+<li>解密举例：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578058957926.png" alt="1578058957926"></li>
 </ul>
 </li>
 </ul>
 <p>维吉尼亚密码（见wikipedia）</p>
 <ul>
-<li><p>方法：</p>
-<ul>
+<li>方法：<ul>
 <li>列出明文并按照密钥长度分组，用密钥对每个组内字母进行移位加密</li>
 <li>加密：$C=(P+K)mod26$</li>
 <li>密钥：$K$会改变</li>
 </ul>
 </li>
-<li><p>安全性：</p>
-<ul>
+<li>安全性：<ul>
 <li>能够消除字母的频率特征</li>
 <li>破解方法<ul>
 <li>找到密钥长度（找出后可进行词频统计攻击）<ul>
-<li>Kasiski-卡西斯基实验<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578061323770.png" alt="1578061323770"></li>
+<li>Kasiski-卡西斯基实验<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578061323770.png" alt="1578061323770"></li>
 <li>Friedman测试法：<ul>
 <li>假设密钥长度为N，计算第1，1+N…子列的重合指数IC，若IC=0.065则N为正确的密钥长度。</li>
 </ul>
@@ -407,18 +466,16 @@
 <li><p>扩散：为了<strong>隐藏明文统计属性</strong>而将一个明文符号的影响扩散到多个密文符号的加密操作，如位置换。常用于DES中。</p>
 </li>
 <li><p>有扩散和无扩散：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578104171640.png" alt="1578104171640"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578104171640.png" alt="1578104171640"></p>
 </li>
 </ul>
 <p>S盒：在密码学中，是对称密钥加密算法执行替换计算的基本结构。在分组密码中，通常用于混淆。</p>
 <ul>
-<li><p>原理：接受特定数量的输入比特m，并将其转换为特定数量的输出比特n，n不一定等于m。</p>
-</li>
-<li><p>eg：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578104537125.png" alt="1578104537125"></p>
-</li>
+<li>原理：接受特定数量的输入比特m，并将其转换为特定数量的输出比特n，n不一定等于m。</li>
+<li>eg：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578104537125.png" alt="1578104537125"></li>
 </ul>
 <h2 id="私钥密码（对称密码）★"><a href="#私钥密码（对称密码）★" class="headerlink" title="私钥密码（对称密码）★"></a>私钥密码（对称密码）★</h2><p>对称加密的定义：加密和解密都使用同一把密钥</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578104815060.png" alt="1578104815060"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578104815060.png" alt="1578104815060"></p>
 <p>对称加密的安全性取决于：</p>
 <ul>
 <li>加密算法具有安全性</li>
@@ -426,7 +483,7 @@
 </ul>
 <h3 id="DES"><a href="#DES" class="headerlink" title="DES"></a>DES</h3><p>定义：DES是一种使用56位密钥（8位为校验位所以有效长度56）对64位长分组进行加密的密码，是一种迭代算法</p>
 <p>特点：DES对明文中每个分组的加密过程都包含16轮，且每轮的操作都完全相同。每轮使用不同的子密钥，但是子密钥是从主密钥中推导而来。</p>
-<p>流程：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578105571989.png" alt="1578105571989"></p>
+<p>流程：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578105571989.png" alt="1578105571989"></p>
 <ul>
 <li>初始置换IP：<ul>
 <li>64比特明文分组置换</li>
@@ -434,14 +491,14 @@
 </ul>
 </li>
 <li>轮内加密<ul>
-<li>整体结构：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578108007426.png" alt="1578108007426"><ul>
+<li>整体结构：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578108007426.png" alt="1578108007426"><ul>
 <li>:one:”F函数”将数据半块与某个子密钥进行处理。</li>
 <li>:two:然后，一个F函数的输出与另一个半块异或之后，</li>
 <li>:three:再与原本的半块组合并交换顺序，进入下一个回次的处理。</li>
 <li>在最后一个回次完成时，两个半块需要交换顺序，这是费斯妥结构的一个特点，以保证加解密的过程相似。</li>
 </ul>
 </li>
-<li>F函数：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578107155618.png" alt="1578107155618"><ul>
+<li>F函数：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578107155618.png" alt="1578107155618"><ul>
 <li>扩张：利用扩张置换（E）将32位的半块扩展到48位</li>
 <li>与密钥混合：扩张后的半块与密钥进行异或</li>
 <li>S盒：经过S盒进行混淆，目的是让密码非线性</li>
@@ -457,19 +514,16 @@
 <p>DES优势：解密的过程和加密的过程完全相同，只是使用的密钥顺序刚好相反</p>
 <p>DES安全性：可破解，但需要7天？成本较高？</p>
 <h3 id="3DES"><a href="#3DES" class="headerlink" title="3DES"></a>3DES</h3><p>定义：由三个连续的DES加密组成</p>
-<p>原理：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578108280891.png" alt="1578108280891"></p>
+<p>原理：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578108280891.png" alt="1578108280891"></p>
 <ul>
 <li>$密文=E_{K3}(D_{K2}(E_{K1}(明文)))$</li>
 <li>$明文=D_{K1}(E_{K2}(D_{K3}(密文)))$</li>
 </ul>
 <p>三个密钥选项：</p>
 <ol>
-<li><p>三个密钥是独立的，强度高</p>
-</li>
-<li><p>当$k_1=k_3$时，则称为双密钥三重DES</p>
-</li>
-<li><p>当$k_1=k_2=k_3$时，即为DES</p>
-</li>
+<li>三个密钥是独立的，强度高</li>
+<li>当$k_1=k_3$时，则称为双密钥三重DES</li>
+<li>当$k_1=k_2=k_3$时，即为DES</li>
 </ol>
 <p>3DES安全性：目前仍有足够的安全性</p>
 <p>面临的问题：3DES实现效率低、DES分组较小</p>
@@ -502,20 +556,22 @@
 </div>
 <p>原理：一个混淆和三个代换</p>
 <ul>
-<li>字节代换：用一个S盒完成分组中的按字节代换</li>
+<li><p>字节代换：用一个S盒完成分组中的按字节代换</p>
+</li>
 <li><p>行移位：一个简单的置换</p>
 <ul>
 <li><p>举例：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578109983211.png" alt="1578109983211"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578109983211.png" alt="1578109983211"></p>
 </li>
 </ul>
 </li>
 <li><p>列混淆：利用在伽罗瓦域上的算数特性的代换</p>
 <ul>
-<li>举例：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578110030148.png" alt="1578110030148"></li>
+<li>举例：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578110030148.png" alt="1578110030148"></li>
 </ul>
 </li>
-<li>轮密钥变换：利用当前分组和扩展密钥的一部分进行按位XOR</li>
+<li><p>轮密钥变换：利用当前分组和扩展密钥的一部分进行按位XOR</p>
+</li>
 </ul>
 <h2 id="公钥密码（非对称密码）★"><a href="#公钥密码（非对称密码）★" class="headerlink" title="公钥密码（非对称密码）★"></a>公钥密码（非对称密码）★</h2><p>对称密钥体制的缺陷：建立传输私钥的“安全信道”并不容易，且密钥量大</p>
 <p>公钥密码体制简介：</p>
@@ -527,18 +583,18 @@
 </ul>
 <h3 id="RSA算法"><a href="#RSA算法" class="headerlink" title="RSA算法"></a>RSA算法</h3><p>数学基础：</p>
 <ul>
-<li><p>剩余类的概念<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578120364046.png" alt="1578120364046"></p>
+<li><p>剩余类的概念<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120364046.png" alt="1578120364046"></p>
 </li>
-<li><p>剩余类互质的概念：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578120588756.png" alt="1578120588756"></p>
+<li><p>剩余类互质的概念：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120588756.png" alt="1578120588756"></p>
 </li>
 <li><p>欧拉函数的概念：与m互素的剩余类的个数称为欧拉函数，记为$\phi(m)$</p>
 </li>
-<li><p>欧拉定理：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578120751644.png" alt="1578120751644"></p>
+<li><p>欧拉定理：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120751644.png" alt="1578120751644"></p>
 </li>
-<li><p>费马小定理：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578120827999.png" alt="1578120827999"></p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578120846172.png" alt="1578120846172"></p>
+<li><p>费马小定理：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120827999.png" alt="1578120827999"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578120846172.png" alt="1578120846172"></p>
 </li>
-<li><p>eg：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578121593653.png" alt="1578121593653"></p>
+<li><p>eg：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578121593653.png" alt="1578121593653"></p>
 </li>
 </ul>
 <p>RSA算法：</p>
@@ -563,9 +619,9 @@
 <li>密钥分发</li>
 </ul>
 <h2 id="DH协议★"><a href="#DH协议★" class="headerlink" title="DH协议★"></a>DH协议★</h2><p>用途：实现双方在不安全通信信道下交流，得到共同密钥，用于对称加密。</p>
-<p>eg：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578124158702.png" alt="1578124158702"></p>
+<p>eg：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578124158702.png" alt="1578124158702"></p>
 <ul>
-<li>$g^{ab}​$mod p为共享密钥</li>
+<li>$g^{ab}$mod p为共享密钥</li>
 </ul>
 <p>问题：</p>
 <ul>
@@ -641,9 +697,9 @@
 <li>跨平台</li>
 </ul>
 <p>3M要素★：网络mobile、设备machine、用户man</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578125818932.png" alt="1578125818932"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578125818932.png" alt="1578125818932"></p>
 <p>四种认证形式：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578126010179.png" alt="1578126010179"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578126010179.png" alt="1578126010179"></p>
 <h2 id="互联网设备指纹认证技术"><a href="#互联网设备指纹认证技术" class="headerlink" title="互联网设备指纹认证技术"></a>互联网设备指纹认证技术</h2><h3 id="软件设备指纹"><a href="#软件设备指纹" class="headerlink" title="软件设备指纹"></a>软件设备指纹</h3><h4 id="基于设备ID"><a href="#基于设备ID" class="headerlink" title="基于设备ID"></a>基于设备ID</h4><p>MAC地址：全球唯一，有被篡改风险</p>
 <p>IMEI/MEID码：</p>
 <ul>
@@ -673,10 +729,8 @@
 </ul>
 <h4 id="基于计算单元"><a href="#基于计算单元" class="headerlink" title="基于计算单元"></a>基于计算单元</h4><p>时钟晶振硬件设备指纹：</p>
 <ul>
-<li><p>时钟偏移</p>
-</li>
-<li><p>时钟偏移率（有效）</p>
-</li>
+<li>时钟偏移</li>
+<li>时钟偏移率（有效）</li>
 <li>由硬件决定从常量</li>
 </ul>
 <p>基于中央处理器的硬件指纹：</p>
@@ -759,14 +813,14 @@
 </ul>
 <h3 id="传感器模型"><a href="#传感器模型" class="headerlink" title="传感器模型"></a>传感器模型</h3><p>传感器模型：$y=f(x_1,n)$（n为向量）</p>
 <p>换能攻击模型：$y=f(x_1,n+a’)$（n、a为向量），详见下图</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578131214978.png" alt="1578131214978"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131214978.png" alt="1578131214978"></p>
 <h3 id="换能攻击例子"><a href="#换能攻击例子" class="headerlink" title="换能攻击例子"></a>换能攻击例子</h3><p>海豚音攻击：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578131470963.png" alt="1578131470963"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131470963.png" alt="1578131470963"></p>
 <p>Walnut：利用声波控制MEMS加速度传感器的输出</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578131492058.png" alt="1578131492058"></p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578131519328.png" alt="1578131519328"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131492058.png" alt="1578131492058"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131519328.png" alt="1578131519328"></p>
 <p>特斯拉自动驾驶汽车：阻塞攻击</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578131544974.png" alt="1578131544974"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578131544974.png" alt="1578131544974"></p>
 <p>Ghost Talk：利用耦合电磁干扰</p>
 <p>关键点：信号注入和信号整形</p>
 <h3 id="换能攻击方法"><a href="#换能攻击方法" class="headerlink" title="换能攻击方法"></a>换能攻击方法</h3><p>信号注入（频率幅度类型）：</p>
@@ -836,7 +890,7 @@
 <li>软IP、固IP、硬IP</li>
 </ul>
 <p>芯片分类：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578137749024.png" alt="1578137749024"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578137749024.png" alt="1578137749024"></p>
 <p>安全问题举例：</p>
 <ul>
 <li>边信道攻击安全事件：BranchScope</li>
@@ -858,7 +912,7 @@
 <blockquote>
 <p>触发器只有在极少的情况下被激活，因此有效载荷在大多数时间内保持不活跃的状态，使得硬件木马难以检测</p>
 </blockquote>
-<p>示例：<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578138820051.png" alt="1578138820051"></p>
+<p>示例：<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578138820051.png" alt="1578138820051"></p>
 <ul>
 <li>攻击者获取了FSM‘的逻辑实现，可以通过B、C进入A</li>
 <li>攻击者获得了原始电路的FSM，可以通过D进入A</li>
@@ -933,7 +987,7 @@
 <li>固件（为硬件提供服务）：是担任着一个系统最基础最底层工作的软件，是固化在设备内部的软件或者驱动程序，在一部分物联网设备中，固件也包含应用软件。</li>
 <li>驱动（为软件提供服务）：允许上层软件和底层硬件进行交互的程序。驱动存在的原因是因为操作系统多样</li>
 </ul>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578295233992.png" alt="1578295233992"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578295233992.png" alt="1578295233992"></p>
 <p>固件的组成部分★：</p>
 <ul>
 <li>固件头：二进制流的初始部分，包含处理器平台架构、内核版本、根文件系统格式</li>
@@ -1044,7 +1098,7 @@
 <p>功能：分段、重组、封装、连接控制</p>
 <p>分类：</p>
 <ul>
-<li>传输通讯类：定义信息传输波段、数据帧结构、最高传输速率等内容<img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578455814648.png" alt="1578455814648"></li>
+<li>传输通讯类：定义信息传输波段、数据帧结构、最高传输速率等内容<img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578455814648.png" alt="1578455814648"></li>
 <li>基础架构类：提供基础服务<ul>
 <li>IPv4/IPv6：用于分组交换网络互联的网络层协议</li>
 <li>6LoWPAN：简化IPv6包头来适应低功耗资源受限网络的要求</li>
@@ -1094,7 +1148,7 @@
 </ul>
 <h3 id="攻击后果"><a href="#攻击后果" class="headerlink" title="攻击后果"></a>攻击后果</h3><p>了解mirai攻击</p>
 <h2 id="通信协议设计安全机制★"><a href="#通信协议设计安全机制★" class="headerlink" title="通信协议设计安全机制★"></a>通信协议设计安全机制★</h2><p>通信协议栈安全架构：IEEE802.15.4（e）通过安全域、安全等级和安全加密与认证三方面提供安全服务，CoAP应用层协议采用<strong>DTLS</strong>提供端到端安全传输，RPL网络层协议采用IPSec来保障安全。</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578465317262.png" alt="1578465317262"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578465317262.png" alt="1578465317262"></p>
 <p>攻击预防：访问控制</p>
 <p>攻击规避：加密机制</p>
 <h3 id="IEEE802-15-4-e"><a href="#IEEE802-15-4-e" class="headerlink" title="IEEE802.15.4(e)"></a>IEEE802.15.4(e)</h3><p>定义：定义了低速率无线个域网，并规定了LP-WPAN的物理层和媒体访问控制，是Zigbee、6LoWPAN基础。</p>
@@ -1112,7 +1166,7 @@
 <li>包括：ICMPv6头部、安全域、DIO/DAO消息格式和可选域。</li>
 <li>RPL安全域可以设置安全算法、密钥模式和安全等级</li>
 <li>安全算法包括加密、完整性认证（AES/CCM）和数字签名算法（SHA256）</li>
-<li><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578466439551.png" alt="1578466439551"></li>
+<li><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578466439551.png" alt="1578466439551"></li>
 </ul>
 <h3 id="IPSec★"><a href="#IPSec★" class="headerlink" title="IPSec★"></a>IPSec★</h3><p>定义：为保护Internet上传输的数据，建立的协议族。</p>
 <p>安全机制：</p>
@@ -1126,14 +1180,12 @@
 <li>在IP报头和高层协议报头之间插入IPSec报头</li>
 <li>保护数据包的有效载荷、高层协议</li>
 <li>不会修改IP报头中的IP地址，只为高层协议提供安全服务</li>
-<li><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578467122506.png" alt="1578467122506"></li>
+<li><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578467122506.png" alt="1578467122506"></li>
 </ul>
 <p>隧道模式：</p>
 <ul>
-<li><p>保护数据和原IP地址，常用于私网域私网之间通过公网建立通信</p>
-</li>
-<li><p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578467139935.png" alt="1578467139935"></p>
-</li>
+<li>保护数据和原IP地址，常用于私网域私网之间通过公网建立通信</li>
+<li><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578467139935.png" alt="1578467139935"></li>
 </ul>
 <h3 id="SSL★"><a href="#SSL★" class="headerlink" title="SSL★"></a>SSL★</h3><p>定义：安全套接字层，位于TCP/IP与各种应用层协议如FTP、telnet等之间。为客户端和服务器之间建立安全的TCP连接，提供双向安全认证和数据机密性、完整性</p>
 <p>后继：TLS，与SSL级别相同，但位于传输层上，与高层协议相互独立无耦合</p>
@@ -1179,7 +1231,7 @@
 </ul>
 <h1 id="第十章-业务安全"><a href="#第十章-业务安全" class="headerlink" title="第十章 业务安全"></a>第十章 业务安全</h1><h2 id="业务安全介绍"><a href="#业务安全介绍" class="headerlink" title="业务安全介绍"></a>业务安全介绍</h2><p>业务定义★：指物联网系统为了实现某一功能而完成的从感知、决策到控制等一系列工作流程规则</p>
 <p>eg：电力物联网</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578470362259.png" alt="1578470362259"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578470362259.png" alt="1578470362259"></p>
 <p>业务于物联网安全的相关性：</p>
 <ul>
 <li>感知：不同业务背景决定传感器种类和传感器物理强度不同</li>
@@ -1234,13 +1286,13 @@
 </li>
 </ul>
 <h2 id="海豚音攻击★"><a href="#海豚音攻击★" class="headerlink" title="海豚音攻击★"></a>海豚音攻击★</h2><h3 id="调制方式"><a href="#调制方式" class="headerlink" title="调制方式"></a>调制方式</h3><p>AM调制：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578555149504.png" alt="1578555149504"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578555149504.png" alt="1578555149504"></p>
 <p>FM调制和调相</p>
 <p>智能语音系统框图：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578555373417.png" alt="1578555373417"></p>
-<h3 id="海豚音攻击原理"><a href="#海豚音攻击原理" class="headerlink" title="海豚音攻击原理"></a>海豚音攻击原理</h3><p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578555537078.png" alt="1578555537078"></p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578556557005.png" alt="1578556557005"></p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578556575453.png" alt="1578556575453"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578555373417.png" alt="1578555373417"></p>
+<h3 id="海豚音攻击原理"><a href="#海豚音攻击原理" class="headerlink" title="海豚音攻击原理"></a>海豚音攻击原理</h3><p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578555537078.png" alt="1578555537078"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578556557005.png" alt="1578556557005"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578556575453.png" alt="1578556575453"></p>
 <h2 id="语音活体检测"><a href="#语音活体检测" class="headerlink" title="语音活体检测"></a>语音活体检测</h2><p>声纹特性：</p>
 <ul>
 <li>相对稳定性：成年后声纹级别不变</li>
@@ -1265,7 +1317,7 @@
 <li>声源尺寸更大场纹更有方向性</li>
 <li>声源频率更高场纹更有方向性</li>
 </ul>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578557344123.png" alt="1578557344123"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578557344123.png" alt="1578557344123"></p>
 <p>场纹的一致性和区别性：</p>
 <ul>
 <li>一致性<ul>
@@ -1315,17 +1367,14 @@
 <p>中间件技术：用于屏蔽分布环境中操作系统与网络协议的异构性（AI场景服务）</p>
 <p>网络计算技术：（利用大量异构计算机）支持管理域计算的能力</p>
 <ul>
-<li><p>与云计算对比：云计算由网格计算发展而来</p>
-<ul>
+<li>与云计算对比：云计算由网格计算发展而来<ul>
 <li>网格重资源共享。云强调专有。</li>
 <li>网格侧重并行集中性计算。云侧重事务性应用。</li>
 <li>网格使用中间件，把困难留给中间件。而云计算对不同服务采用不同方法</li>
 </ul>
 </li>
-<li><p>P2P计算</p>
-</li>
-<li><p>雾计算：雾计算设备通常是路由器、网关</p>
-</li>
+<li>P2P计算</li>
+<li>雾计算：雾计算设备通常是路由器、网关</li>
 </ul>
 <h2 id="边缘计算核心技术"><a href="#边缘计算核心技术" class="headerlink" title="边缘计算核心技术"></a>边缘计算核心技术</h2><p>计算迁移：将计算密集型任务迁移到资源充足的计算中心的设备执行</p>
 <p>负载均衡：用来在多个计算机、网络连接、CPU、磁盘驱动器或其他资源中分配负载，以达到最优化资源使用、最大化吞吐率、最小化响应事件、同时避免过载。</p>
@@ -1347,9 +1396,9 @@
 </ul>
 <p>ContextIoT和Octopus</p>
 <h1 id="专题3-AI安全"><a href="#专题3-AI安全" class="headerlink" title="专题3 AI安全"></a>专题3 AI安全</h1><p>攻击入口：</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578571033281.png" alt="1578571033281"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578571033281.png" alt="1578571033281"></p>
 <p>机器学习学到的函数用于新样本的能力，称为泛化能力，不能泛化则出现过拟合能力</p>
-<p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578571233111.png" alt="1578571233111"></p>
+<p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578571233111.png" alt="1578571233111"></p>
 <p>机器学习分类：</p>
 <ul>
 <li>监督学习</li>
@@ -1377,7 +1426,7 @@
 <li>灰盒</li>
 <li>白盒</li>
 </ul>
-<h2 id="攻击类型"><a href="#攻击类型" class="headerlink" title="攻击类型"></a>攻击类型</h2><p><img src="/2020/05/08/%E5%A4%8D%E4%B9%A0/物联网安全\1578572048461.png" alt="1578572048461"></p>
+<h2 id="攻击类型"><a href="#攻击类型" class="headerlink" title="攻击类型"></a>攻击类型</h2><p><img src="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/1578572048461.png" alt="1578572048461"></p>
 <h2 id="攻击防御"><a href="#攻击防御" class="headerlink" title="攻击防御"></a>攻击防御</h2><p>数据中毒防御：</p>
 <ul>
 <li>训练集消毒</li>
@@ -1401,254 +1450,37 @@
 <h2 id="AI助力安全"><a href="#AI助力安全" class="headerlink" title="AI助力安全"></a>AI助力安全</h2><p>安全认证：人脸识别</p>
 <p>安全检测：网络入侵检测</p>
 <p>增强加密算法</p>
-<p>计算、流程推导</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/%E7%89%A9%E8%81%94%E7%BD%91-%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/" rel="tag"># 物联网,网络安全</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="John Pan">
-      <meta itemprop="description" content="记录计算机科学相关笔记">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="John Pan's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/" class="post-title-link" itemprop="url">物联网安全</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-05-08 14:16:29 / 修改时间：14:19:37" itemprop="dateCreated datePublished" datetime="2020-05-08T14:16:29+08:00">2020-05-08</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">课程笔记</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="第一章-物联网概述"><a href="#第一章-物联网概述" class="headerlink" title="第一章 物联网概述"></a>第一章 物联网概述</h1><h2 id="物联网的定义★"><a href="#物联网的定义★" class="headerlink" title="物联网的定义★"></a>物联网的定义★</h2><p>物联网的定义★：物联网是基于互联网、传统电信网等信息承载体，让所有<strong>能够寻址</strong>的物理实体实现<strong>互联互通</strong>，从而实现某种特定的<strong>功能业务</strong>的网络</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/05/08/%E7%89%A9%E8%81%94%E7%BD%91%E5%AE%89%E5%85%A8/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/03/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99%E7%AE%A1%E7%90%86%E4%B8%8E%E7%BE%8E%E5%8C%96/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="John Pan">
-      <meta itemprop="description" content="记录计算机科学相关笔记">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="John Pan's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/03/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99%E7%AE%A1%E7%90%86%E4%B8%8E%E7%BE%8E%E5%8C%96/" class="post-title-link" itemprop="url">关于本站管理与美化</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-04-03 16:03:50 / 修改时间：21:01:26" itemprop="dateCreated datePublished" datetime="2020-04-03T16:03:50+08:00">2020-04-03</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%9D%82%E9%A1%B9/" itemprop="url" rel="index"><span itemprop="name">杂项</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>用于博客管理的一些指令合集</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/03/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99%E7%AE%A1%E7%90%86%E4%B8%8E%E7%BE%8E%E5%8C%96/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/03/%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99%E7%AE%A1%E7%90%86%E4%B8%8E%E7%BE%8E%E5%8C%96/" rel="prev" title="关于本站管理与美化">
+      <i class="fa fa-chevron-left"></i> 关于本站管理与美化
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/05/08/%E5%A4%8D%E4%B9%A0/" rel="next" title="复习">
+      复习 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/03/%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="John Pan">
-      <meta itemprop="description" content="记录计算机科学相关笔记">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="John Pan's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/04/03/%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/" class="post-title-link" itemprop="url">面试知识点整理</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-04-03 12:57:40 / 修改时间：20:53:09" itemprop="dateCreated datePublished" datetime="2020-04-03T12:57:40+08:00">2020-04-03</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">基础知识</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>学习总结面试基础知识，包括：</p>
-<ul>
-<li>数据结构</li>
-<li>数据库</li>
-<li>计算机网络</li>
-<li>操作系统</li>
-</ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/04/03/%E9%9D%A2%E8%AF%95%E7%9F%A5%E8%AF%86%E7%82%B9%E6%95%B4%E7%90%86/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -1701,6 +1533,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-物联网概述"><span class="nav-number">1.</span> <span class="nav-text">第一章 物联网概述</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网的定义★"><span class="nav-number">1.1.</span> <span class="nav-text">物联网的定义★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网的架构★"><span class="nav-number">1.2.</span> <span class="nav-text">物联网的架构★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网的关键技术"><span class="nav-number">1.3.</span> <span class="nav-text">物联网的关键技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#定位系统"><span class="nav-number">1.4.</span> <span class="nav-text">定位系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网新兴技术"><span class="nav-number">1.5.</span> <span class="nav-text">物联网新兴技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网应用场景"><span class="nav-number">1.6.</span> <span class="nav-text">物联网应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网的安全与隐私"><span class="nav-number">1.7.</span> <span class="nav-text">物联网的安全与隐私</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章-古典密码学"><span class="nav-number">2.</span> <span class="nav-text">第二章 古典密码学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述★"><span class="nav-number">2.1.</span> <span class="nav-text">概述★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信息安全的目标★"><span class="nav-number">2.2.</span> <span class="nav-text">信息安全的目标★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#密码学的基本概念"><span class="nav-number">2.3.</span> <span class="nav-text">密码学的基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#几种古典密码学加密方法及其安全性★"><span class="nav-number">2.4.</span> <span class="nav-text">几种古典密码学加密方法及其安全性★</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章-现代密码学"><span class="nav-number">3.</span> <span class="nav-text">第三章 现代密码学</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本知识"><span class="nav-number">3.1.</span> <span class="nav-text">基本知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#私钥密码（对称密码）★"><span class="nav-number">3.2.</span> <span class="nav-text">私钥密码（对称密码）★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DES"><span class="nav-number">3.2.1.</span> <span class="nav-text">DES</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3DES"><span class="nav-number">3.2.2.</span> <span class="nav-text">3DES</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AES"><span class="nav-number">3.2.3.</span> <span class="nav-text">AES</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公钥密码（非对称密码）★"><span class="nav-number">3.3.</span> <span class="nav-text">公钥密码（非对称密码）★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RSA算法"><span class="nav-number">3.3.1.</span> <span class="nav-text">RSA算法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DH协议★"><span class="nav-number">3.4.</span> <span class="nav-text">DH协议★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网密码学技术应用"><span class="nav-number">3.5.</span> <span class="nav-text">物联网密码学技术应用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章-认证安全"><span class="nav-number">4.</span> <span class="nav-text">第四章 认证安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述★-1"><span class="nav-number">4.1.</span> <span class="nav-text">概述★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网设备指纹认证技术"><span class="nav-number">4.2.</span> <span class="nav-text">互联网设备指纹认证技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#软件设备指纹"><span class="nav-number">4.2.1.</span> <span class="nav-text">软件设备指纹</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基于设备ID"><span class="nav-number">4.2.1.1.</span> <span class="nav-text">基于设备ID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于浏览器信息"><span class="nav-number">4.2.1.2.</span> <span class="nav-text">基于浏览器信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他"><span class="nav-number">4.2.1.3.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#硬件设备指纹★"><span class="nav-number">4.2.2.</span> <span class="nav-text">硬件设备指纹★</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基于感知单元"><span class="nav-number">4.2.2.1.</span> <span class="nav-text">基于感知单元</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于传输单元"><span class="nav-number">4.2.2.2.</span> <span class="nav-text">基于传输单元</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于计算单元"><span class="nav-number">4.2.2.3.</span> <span class="nav-text">基于计算单元</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网生物认证技术★"><span class="nav-number">4.3.</span> <span class="nav-text">互联网生物认证技术★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基于生理性特征"><span class="nav-number">4.3.1.</span> <span class="nav-text">基于生理性特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#指纹识别"><span class="nav-number">4.3.1.1.</span> <span class="nav-text">指纹识别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#人脸识别"><span class="nav-number">4.3.1.2.</span> <span class="nav-text">人脸识别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#声纹识别"><span class="nav-number">4.3.1.3.</span> <span class="nav-text">声纹识别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基于行为特征"><span class="nav-number">4.3.2.</span> <span class="nav-text">基于行为特征</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#签名动态识别"><span class="nav-number">4.3.2.1.</span> <span class="nav-text">签名动态识别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#步态识别"><span class="nav-number">4.3.2.2.</span> <span class="nav-text">步态识别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">4.3.3.</span> <span class="nav-text">问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#互联网场景认证技术"><span class="nav-number">4.4.</span> <span class="nav-text">互联网场景认证技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#利用固有属性进行验证"><span class="nav-number">4.4.1.</span> <span class="nav-text">利用固有属性进行验证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基于射频信道的认证模式"><span class="nav-number">4.4.1.1.</span> <span class="nav-text">基于射频信道的认证模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于音频信号的认证模式"><span class="nav-number">4.4.1.2.</span> <span class="nav-text">基于音频信号的认证模式</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#利用外界行为产生激励进行认证"><span class="nav-number">4.4.2.</span> <span class="nav-text">利用外界行为产生激励进行认证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基于同构传感器"><span class="nav-number">4.4.2.1.</span> <span class="nav-text">基于同构传感器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基于异构传感器"><span class="nav-number">4.4.2.2.</span> <span class="nav-text">基于异构传感器</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第五章-传感器与执行器安全"><span class="nav-number">5.</span> <span class="nav-text">第五章 传感器与执行器安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#传感器概述★"><span class="nav-number">5.1.</span> <span class="nav-text">传感器概述★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传感器测量安全★★"><span class="nav-number">5.2.</span> <span class="nav-text">传感器测量安全★★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#换能攻击概念"><span class="nav-number">5.2.1.</span> <span class="nav-text">换能攻击概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传感器模型"><span class="nav-number">5.2.2.</span> <span class="nav-text">传感器模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换能攻击例子"><span class="nav-number">5.2.3.</span> <span class="nav-text">换能攻击例子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换能攻击方法"><span class="nav-number">5.2.4.</span> <span class="nav-text">换能攻击方法</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传感器隐私安全"><span class="nav-number">5.3.</span> <span class="nav-text">传感器隐私安全</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#执行器安全★"><span class="nav-number">5.4.</span> <span class="nav-text">执行器安全★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#攻击方法"><span class="nav-number">5.4.1.</span> <span class="nav-text">攻击方法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第六章-芯片安全"><span class="nav-number">6.</span> <span class="nav-text">第六章 芯片安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">6.1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#芯片漏洞与攻击★"><span class="nav-number">6.2.</span> <span class="nav-text">芯片漏洞与攻击★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#芯片后门"><span class="nav-number">6.2.1.</span> <span class="nav-text">芯片后门</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#硬件木马★★"><span class="nav-number">6.2.2.</span> <span class="nav-text">硬件木马★★</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#边信道攻击★"><span class="nav-number">6.2.3.</span> <span class="nav-text">边信道攻击★</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行锤攻击★"><span class="nav-number">6.2.4.</span> <span class="nav-text">行锤攻击★</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#芯片安全与防护"><span class="nav-number">6.3.</span> <span class="nav-text">芯片安全与防护</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第七章-软件安全"><span class="nav-number">7.</span> <span class="nav-text">第七章 软件安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网固件及安全概述★"><span class="nav-number">7.1.</span> <span class="nav-text">物联网固件及安全概述★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#物联网固件的主要安全风险"><span class="nav-number">7.1.1.</span> <span class="nav-text">物联网固件的主要安全风险</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网软件及安全漏洞★★"><span class="nav-number">7.2.</span> <span class="nav-text">物联网软件及安全漏洞★★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#不安全的认证和授权"><span class="nav-number">7.2.1.</span> <span class="nav-text">不安全的认证和授权</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不安全的Web接口"><span class="nav-number">7.2.2.</span> <span class="nav-text">不安全的Web接口</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不安全的系统和程序"><span class="nav-number">7.2.3.</span> <span class="nav-text">不安全的系统和程序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网软件防护技术★"><span class="nav-number">7.3.</span> <span class="nav-text">物联网软件防护技术★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#程序保护机制"><span class="nav-number">7.3.1.</span> <span class="nav-text">程序保护机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#逆向防护技术"><span class="nav-number">7.3.2.</span> <span class="nav-text">逆向防护技术</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第八章-物联网协议流量安全"><span class="nav-number">8.</span> <span class="nav-text">第八章 物联网协议流量安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网通讯协议"><span class="nav-number">8.1.</span> <span class="nav-text">物联网通讯协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物联网通信安全风险★"><span class="nav-number">8.2.</span> <span class="nav-text">物联网通信安全风险★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#物理层安全风险"><span class="nav-number">8.2.1.</span> <span class="nav-text">物理层安全风险</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MAC层安全风险"><span class="nav-number">8.2.2.</span> <span class="nav-text">MAC层安全风险</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#网络层安全风险"><span class="nav-number">8.2.3.</span> <span class="nav-text">网络层安全风险</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#传输层安全风险"><span class="nav-number">8.2.4.</span> <span class="nav-text">传输层安全风险</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#攻击后果"><span class="nav-number">8.2.5.</span> <span class="nav-text">攻击后果</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通信协议设计安全机制★"><span class="nav-number">8.3.</span> <span class="nav-text">通信协议设计安全机制★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#IEEE802-15-4-e"><span class="nav-number">8.3.1.</span> <span class="nav-text">IEEE802.15.4(e)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#RPL路由协议"><span class="nav-number">8.3.2.</span> <span class="nav-text">RPL路由协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#IPSec★"><span class="nav-number">8.3.3.</span> <span class="nav-text">IPSec★</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSL★"><span class="nav-number">8.3.4.</span> <span class="nav-text">SSL★</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTPS"><span class="nav-number">8.3.5.</span> <span class="nav-text">HTTPS</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基于流量侧信道的安全攻击-防护★"><span class="nav-number">8.4.</span> <span class="nav-text">基于流量侧信道的安全攻击&#x2F;防护★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件视角的协议漏洞"><span class="nav-number">8.5.</span> <span class="nav-text">软件视角的协议漏洞</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第九章-云安全"><span class="nav-number">9.</span> <span class="nav-text">第九章 云安全</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第十章-业务安全"><span class="nav-number">10.</span> <span class="nav-text">第十章 业务安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#业务安全介绍"><span class="nav-number">10.1.</span> <span class="nav-text">业务安全介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#电力物联网"><span class="nav-number">10.2.</span> <span class="nav-text">电力物联网</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#专题1-语音安全"><span class="nav-number">11.</span> <span class="nav-text">专题1 语音安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语音基础知识"><span class="nav-number">11.1.</span> <span class="nav-text">语音基础知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#海豚音攻击★"><span class="nav-number">11.2.</span> <span class="nav-text">海豚音攻击★</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#调制方式"><span class="nav-number">11.2.1.</span> <span class="nav-text">调制方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#海豚音攻击原理"><span class="nav-number">11.2.2.</span> <span class="nav-text">海豚音攻击原理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#语音活体检测"><span class="nav-number">11.3.</span> <span class="nav-text">语音活体检测</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#专题2-边缘计算"><span class="nav-number">12.</span> <span class="nav-text">专题2 边缘计算</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#边缘计算概述★"><span class="nav-number">12.1.</span> <span class="nav-text">边缘计算概述★</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边缘计算相关模型"><span class="nav-number">12.2.</span> <span class="nav-text">边缘计算相关模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分布式计算"><span class="nav-number">12.3.</span> <span class="nav-text">分布式计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边缘计算核心技术"><span class="nav-number">12.4.</span> <span class="nav-text">边缘计算核心技术</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边缘计算典型应用场景"><span class="nav-number">12.5.</span> <span class="nav-text">边缘计算典型应用场景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#边缘计算安全"><span class="nav-number">12.6.</span> <span class="nav-text">边缘计算安全</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#专题3-AI安全"><span class="nav-number">13.</span> <span class="nav-text">专题3 AI安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#AI攻击相关知识"><span class="nav-number">13.1.</span> <span class="nav-text">AI攻击相关知识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#攻击类型"><span class="nav-number">13.2.</span> <span class="nav-text">攻击类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#攻击防御"><span class="nav-number">13.3.</span> <span class="nav-text">攻击防御</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AI助力安全"><span class="nav-number">13.4.</span> <span class="nav-text">AI助力安全</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
