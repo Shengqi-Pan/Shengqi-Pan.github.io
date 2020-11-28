@@ -20,22 +20,20 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="对于本地仓库基本的提交 在vscode中，在项目目录下，通过ctrl + &#96;&lt;&#x2F;code&gt;唤出本地终端 git init 把该目录初始化为可以用git管理的仓库 git add readme.md 把readme加到git缓冲中 要提交全部git add . git commit -m &quot;wrote a file&quot; 提交更改">
+  <meta name="description" content="指令 git commit --amend发现上次提交的bug，修改更新上次的提交记录  git log --graph --pretty&#x3D;oneline --abbrev-commit 更简单地:git log --graph --oneline --all 可以在终端显示分支图  git checkout -b test_merge新建test_merge分支并进入  git branch -">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git命令">
-<meta property="og:url" content="http://yoursite.com/2020/07/16/git%E5%91%BD%E4%BB%A4/index.html">
+<meta property="og:title" content="git命令进阶">
+<meta property="og:url" content="http://yoursite.com/2020/11/28/git%E5%91%BD%E4%BB%A4%E8%BF%9B%E9%98%B6/index.html">
 <meta property="og:site_name" content="John Pan&#39;s Blog">
-<meta property="og:description" content="对于本地仓库基本的提交 在vscode中，在项目目录下，通过ctrl + &#96;&lt;&#x2F;code&gt;唤出本地终端 git init 把该目录初始化为可以用git管理的仓库 git add readme.md 把readme加到git缓冲中 要提交全部git add . git commit -m &quot;wrote a file&quot; 提交更改">
+<meta property="og:description" content="指令 git commit --amend发现上次提交的bug，修改更新上次的提交记录  git log --graph --pretty&#x3D;oneline --abbrev-commit 更简单地:git log --graph --oneline --all 可以在终端显示分支图  git checkout -b test_merge新建test_merge分支并进入  git branch -">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/2020/07/16/git%E5%91%BD%E4%BB%A4/1592496678625.png">
-<meta property="article:published_time" content="2020-07-16T06:01:17.000Z">
-<meta property="article:modified_time" content="2020-07-19T11:51:29.290Z">
+<meta property="article:published_time" content="2020-11-28T12:02:28.000Z">
+<meta property="article:modified_time" content="2020-11-28T12:17:13.151Z">
 <meta property="article:author" content="John Pan">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/2020/07/16/git%E5%91%BD%E4%BB%A4/1592496678625.png">
 
-<link rel="canonical" href="http://yoursite.com/2020/07/16/git%E5%91%BD%E4%BB%A4/">
+<link rel="canonical" href="http://yoursite.com/2020/11/28/git%E5%91%BD%E4%BB%A4%E8%BF%9B%E9%98%B6/">
 
 
 <script id="page-configurations">
@@ -48,7 +46,7 @@
   };
 </script>
 
-  <title>git命令 | John Pan's Blog</title>
+  <title>git命令进阶 | John Pan's Blog</title>
   
 
 
@@ -168,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/16/git%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/11/28/git%E5%91%BD%E4%BB%A4%E8%BF%9B%E9%98%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -181,7 +179,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          git命令
+          git命令进阶
         </h1>
 
         <div class="post-meta">
@@ -190,16 +188,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2020-07-16 14:01:17" itemprop="dateCreated datePublished" datetime="2020-07-16T14:01:17+08:00">2020-07-16</time>
+              <time title="创建时间：2020-11-28 20:02:28 / 修改时间：20:17:13" itemprop="dateCreated datePublished" datetime="2020-11-28T20:02:28+08:00">2020-11-28</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-07-19 19:51:29" itemprop="dateModified" datetime="2020-07-19T19:51:29+08:00">2020-07-19</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -221,69 +213,35 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="对于本地仓库"><a href="#对于本地仓库" class="headerlink" title="对于本地仓库"></a>对于本地仓库</h1><h2 id="基本的提交"><a href="#基本的提交" class="headerlink" title="基本的提交"></a>基本的提交</h2><ol>
-<li>在vscode中，在项目目录下，通过<code>ctrl</code> + <kbd>`</kbd>&lt;/code&gt;唤出本地终端</li>
-<li><code>git init</code> 把该目录初始化为可以用git管理的仓库</li>
-<li><code>git add readme.md</code> 把readme加到git缓冲中 要提交全部<code>git add .</code></li>
-<li><code>git commit -m &quot;wrote a file&quot;</code> 提交更改</li>
+        <h1 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h1><ol>
+<li><p><code>git commit --amend</code>发现上次提交的bug，修改更新上次的提交记录</p>
+</li>
+<li><p><code>git log --graph --pretty=oneline --abbrev-commit</code></p>
+<p>更简单地:<code>git log --graph --oneline --all</code></p>
+<p>可以在终端显示分支图</p>
+</li>
+<li><p><code>git checkout -b test_merge</code>新建<code>test_merge</code>分支并进入</p>
+</li>
+<li><p><code>git branch -d test_merge</code>删除<code>test_merge</code>分支</p>
+</li>
+<li><p><code>git reset --hard savepoint</code>，返回到<code>savepoint</code>分支时刻（此时刻之后的提交全部不见）</p>
+</li>
+<li></li>
 </ol>
 <a id="more"></a>
-<h2 id="其他功能"><a href="#其他功能" class="headerlink" title="其他功能"></a>其他功能</h2><ol>
-<li><code>git status</code> 查看当前git状态</li>
-<li><code>git log</code> 查看提交历史，以便确定回退的commit_id(<code>git log --pretty=oneline</code> 更简洁)</li>
-<li><code>git reset --hard commit_id</code> 回退版本，commit_id不用打全</li>
-<li><code>git reflog</code> 查看简洁的提交历史</li>
-<li><code>git checkout -- readme.md</code> 丢弃工作区的更改</li>
-<li><code>git reset HEAD readme.md</code> 把暂存区的更改撤销到工作区</li>
-<li><code>git rm readme.md</code> 从库中删除文件</li>
-<li><code>git rm -r --cached .idea</code> 删除后来加入gitignore但之前已经上传至仓库的.idea文件</li>
-</ol>
-<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><ol>
-<li><code>git branch</code> 查看分支</li>
-<li><code>git branch &lt;name&gt;</code> 创建分支</li>
-<li><code>git checkout &lt;name&gt;</code> 或 <code>git switch &lt;name&gt;</code> 切换分支</li>
-<li><code>git checkout -b &lt;name&gt;</code> 或 <code>git switch -c &lt;name&gt;</code> 切换分支</li>
-<li><code>git merge &lt;name&gt;</code> 合并某分支到当前分支<ul>
-<li>遇到冲突时需要手动解决</li>
+<h1 id="思想"><a href="#思想" class="headerlink" title="思想"></a>思想</h1><h2 id="Merge"><a href="#Merge" class="headerlink" title="Merge"></a>Merge</h2><ul>
+<li><a href="http://think-like-a-git.net/sections/testing-out-merges/the-scout-pattern.html" target="_blank" rel="noopener">The Scout Pattern</a><ul>
+<li>Which means a branch is a pioneer who tests whether there’s sth. wrong ahead.</li>
 </ul>
 </li>
-<li><code>git branch -d &lt;name&gt;</code> 删除分支</li>
-<li><code>git merge --no-ff -m &quot;merge with no-ff&quot; dev</code> 禁用fast forward</li>
-<li><code>git log --graph</code> 查看分支合并图</li>
-</ol>
-<h2 id="多人合作"><a href="#多人合作" class="headerlink" title="多人合作"></a>多人合作</h2><ol>
-<li><code>git remote -v</code> 查看远程库信息</li>
-<li><code>git push origin &lt;name&gt;</code> 推送分支的信息</li>
-<li><code>git checkout -b &lt;name&gt; origin/&lt;name&gt;</code> 关联本地和远程分支</li>
-<li><code>git pull</code> 从远程抓取分支</li>
-</ol>
-<h2 id="打tag"><a href="#打tag" class="headerlink" title="打tag"></a>打tag</h2><ol>
-<li><code>git tag</code> 列出当前标签，可带选项<code>-l</code> <code>--list</code></li>
-<li><code>git tag -l &quot;v1.8.5*&quot;</code> 仅列出1.8.5系列</li>
-<li><code>git tag -a v1.4 -m &quot;my version 1.4&quot;</code> 打附注标签</li>
-<li><code>git tag v1.4-lw</code> 打轻量标签</li>
-<li><code>git show + 标签名</code> 可以查看标签信息</li>
-<li><code>git tag -a v1.2 9fceb02</code> 给历史中的某个提交打标签</li>
-<li><code>git push origin v1.5</code> 将tag推送到远程仓库</li>
-<li><code>git push origin --tags</code> 将所有不在远程仓库的tag推送至远程仓库</li>
-<li><code>git tag -d v1.4-lw</code> 删除标签，<code>git push origin :refs/tags/v1.4-lw</code> 删除远程仓库标签，<code>git push origin --delete &lt;tagname&gt;</code> 也可以删除远程仓库标签</li>
-</ol>
-<h1 id="对于Github的远程库"><a href="#对于Github的远程库" class="headerlink" title="对于Github的远程库"></a>对于Github的远程库</h1><p>首先确认ssh有关联</p>
-<ol>
-<li><p>在github新建仓库后出现如下画面</p>
-<p><img src="/2020/07/16/git%E5%91%BD%E4%BB%A4/1592496678625.png" alt="1592496678625"></p>
+<li><a href="http://think-like-a-git.net/sections/testing-out-merges/the-savepoint-pattern.html" target="_blank" rel="noopener">The Savepoint Pattern</a><ul>
+<li>Which means a branch is a savepoint here</li>
+</ul>
 </li>
-<li><p><code>git remote add origin git@github.com:Shengqi-Pan/test.git</code> 将本地仓库与github关联</p>
-</li>
-<li><p><code>git push -u origin master</code> 第一次，之后似乎不用加-u</p>
-</li>
-<li><p><code>git clone git@github.com:michaelliao/******.git</code> clone到本地</p>
-</li>
-</ol>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
-<li><a href="https://git-scm.com/book/zh/v2" target="_blank" rel="noopener">https://git-scm.com/book/zh/v2</a></li>
-<li>廖雪峰的网站</li>
-</ol>
+</ul>
+<h2 id><a href="#" class="headerlink" title=" "></a> </h2><h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>在执行一些你不确定的git指令的时候，可以先如下进行备份，再尝试</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ..</span><br><span class="line">cp -r work backup_work</span><br><span class="line">cd work</span><br></pre></td></tr></table></figure>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>墙裂推荐<a href="http://think-like-a-git.net/" target="_blank" rel="noopener">Think Like (a) Git</a></p>
 
     </div>
 
@@ -302,13 +260,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/07/15/CSAPP%E7%AC%94%E8%AE%B0/" rel="prev" title="CSAPP笔记">
-      <i class="fa fa-chevron-left"></i> CSAPP笔记
+    <a href="/2020/11/26/boot%E7%A9%BA%E9%97%B4%E4%B8%8D%E5%A4%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" rel="prev" title="/boot空间不够的解决办法">
+      <i class="fa fa-chevron-left"></i> /boot空间不够的解决办法
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2020/11/26/boot%E7%A9%BA%E9%97%B4%E4%B8%8D%E5%A4%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/" rel="next" title="/boot空间不够的解决办法">
-      /boot空间不够的解决办法 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -367,7 +322,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#对于本地仓库"><span class="nav-number">1.</span> <span class="nav-text">对于本地仓库</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本的提交"><span class="nav-number">1.1.</span> <span class="nav-text">基本的提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他功能"><span class="nav-number">1.2.</span> <span class="nav-text">其他功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分支管理"><span class="nav-number">1.3.</span> <span class="nav-text">分支管理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多人合作"><span class="nav-number">1.4.</span> <span class="nav-text">多人合作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#打tag"><span class="nav-number">1.5.</span> <span class="nav-text">打tag</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#对于Github的远程库"><span class="nav-number">2.</span> <span class="nav-text">对于Github的远程库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">3.</span> <span class="nav-text">参考</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#指令"><span class="nav-number">1.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#思想"><span class="nav-number">2.</span> <span class="nav-text">思想</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Merge"><span class="nav-number">2.1.</span> <span class="nav-text">Merge</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#"><span class="nav-number">2.2.</span> <span class="nav-text"> </span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他"><span class="nav-number">3.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
