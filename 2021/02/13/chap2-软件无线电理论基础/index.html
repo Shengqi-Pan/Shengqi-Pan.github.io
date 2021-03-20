@@ -20,19 +20,21 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="软件无线电理论基础信号采样基本理论Nyquist采样定理设一个频率带限信号$x(t)$，其频带限制在$(0, f_H)$内，如果以不小于$f_s&#x3D;2f_H$的采样速率对$x(t)$进行等间隔采样，得到时间离散的采样信号$x(n)&#x3D;x(nT_s)$（其中$T_s&#x3D;1&#x2F;f_s$称为采样间隔），则原信号$x(t)$将被所得到的采样值$x(n)$完全地确定。 带通采样定理设一个频率带限信号$x(t)$，其">
+  <meta name="description" content="软件无线电理论基础信号采样基本理论Nyquist采样定理Nyquist采样定理：设一个频率带限信号$x(t)$，其频带限制在$(0, f_H)$内，如果以不小于$f_s&#x3D;2f_H$的采样速率对$x(t)$进行等间隔采样，得到时间离散的采样信号$x(n)&#x3D;x(nT_s)$（其中$T_s&#x3D;1&#x2F;f_s$称为采样间隔），则原信号$x(t)$将被所得到的采样值$x(n)$完全地确定。 带通采样定理带通采样定">
 <meta property="og:type" content="article">
 <meta property="og:title" content="chap2-软件无线电理论基础">
 <meta property="og:url" content="http://yoursite.com/2021/02/13/chap2-%E8%BD%AF%E4%BB%B6%E6%97%A0%E7%BA%BF%E7%94%B5%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="John Pan&#39;s Blog">
-<meta property="og:description" content="软件无线电理论基础信号采样基本理论Nyquist采样定理设一个频率带限信号$x(t)$，其频带限制在$(0, f_H)$内，如果以不小于$f_s&#x3D;2f_H$的采样速率对$x(t)$进行等间隔采样，得到时间离散的采样信号$x(n)&#x3D;x(nT_s)$（其中$T_s&#x3D;1&#x2F;f_s$称为采样间隔），则原信号$x(t)$将被所得到的采样值$x(n)$完全地确定。 带通采样定理设一个频率带限信号$x(t)$，其">
+<meta property="og:description" content="软件无线电理论基础信号采样基本理论Nyquist采样定理Nyquist采样定理：设一个频率带限信号$x(t)$，其频带限制在$(0, f_H)$内，如果以不小于$f_s&#x3D;2f_H$的采样速率对$x(t)$进行等间隔采样，得到时间离散的采样信号$x(n)&#x3D;x(nT_s)$（其中$T_s&#x3D;1&#x2F;f_s$称为采样间隔），则原信号$x(t)$将被所得到的采样值$x(n)$完全地确定。 带通采样定理带通采样定">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2021/02/13/chap2-%E8%BD%AF%E4%BB%B6%E6%97%A0%E7%BA%BF%E7%94%B5%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/image-20210214145844333.png">
 <meta property="article:published_time" content="2021-02-13T05:19:19.000Z">
-<meta property="article:modified_time" content="2021-02-14T02:24:24.333Z">
+<meta property="article:modified_time" content="2021-02-17T02:44:58.438Z">
 <meta property="article:author" content="John Pan">
 <meta property="article:tag" content="FPGA">
 <meta property="article:tag" content="软件无线电">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2021/02/13/chap2-%E8%BD%AF%E4%BB%B6%E6%97%A0%E7%BA%BF%E7%94%B5%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/image-20210214145844333.png">
 
 <link rel="canonical" href="http://yoursite.com/2021/02/13/chap2-%E8%BD%AF%E4%BB%B6%E6%97%A0%E7%BA%BF%E7%94%B5%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/">
 
@@ -197,7 +199,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-02-14 10:24:24" itemprop="dateModified" datetime="2021-02-14T10:24:24+08:00">2021-02-14</time>
+                <time title="修改时间：2021-02-17 10:44:58" itemprop="dateModified" datetime="2021-02-17T10:44:58+08:00">2021-02-17</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,15 +222,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="软件无线电理论基础"><a href="#软件无线电理论基础" class="headerlink" title="软件无线电理论基础"></a>软件无线电理论基础</h1><h2 id="信号采样基本理论"><a href="#信号采样基本理论" class="headerlink" title="信号采样基本理论"></a>信号采样基本理论</h2><h3 id="Nyquist采样定理"><a href="#Nyquist采样定理" class="headerlink" title="Nyquist采样定理"></a>Nyquist采样定理</h3><p>设一个频率带限信号$x(t)$，其频带限制在$(0, f_H)$内，如果以不小于$f_s=2f_H$的采样速率对$x(t)$进行等间隔采样，得到时间离散的采样信号$x(n)=x(nT_s)$（其中$T_s=1/f_s$称为采样间隔），则原信号$x(t)$将被所得到的采样值$x(n)$完全地确定。</p>
-<h3 id="带通采样定理"><a href="#带通采样定理" class="headerlink" title="带通采样定理"></a>带通采样定理</h3><p>设一个频率带限信号$x(t)$，其频带限制在$(f_L, f_H)$内，如果其采样速率$f_s$满足式：</p>
+        <h1 id="软件无线电理论基础"><a href="#软件无线电理论基础" class="headerlink" title="软件无线电理论基础"></a>软件无线电理论基础</h1><h2 id="信号采样基本理论"><a href="#信号采样基本理论" class="headerlink" title="信号采样基本理论"></a>信号采样基本理论</h2><h3 id="Nyquist采样定理"><a href="#Nyquist采样定理" class="headerlink" title="Nyquist采样定理"></a>Nyquist采样定理</h3><p><strong>Nyquist采样定理</strong>：设一个频率带限信号$x(t)$，其频带限制在$(0, f_H)$内，如果以不小于$f_s=2f_H$的采样速率对$x(t)$进行等间隔采样，得到时间离散的采样信号$x(n)=x(nT_s)$（其中$T_s=1/f_s$称为采样间隔），则原信号$x(t)$将被所得到的采样值$x(n)$完全地确定。</p>
+<h3 id="带通采样定理"><a href="#带通采样定理" class="headerlink" title="带通采样定理"></a>带通采样定理</h3><p><strong>带通采样定理</strong>：设一个频率带限信号$x(t)$，其频带限制在$(f_L, f_H)$内，如果其采样速率$f_s$满足式：</p>
 <script type="math/tex; mode=display">
 f_s = \frac{2(f_L+f_H)}{(2n+1)}</script><a id="more"></a>
 <p>式中，$n$取能满足$f_s≥2(f_H-f_L)$的最大整数$(0,1,2,…)$，则用$f_s$进行等间隔采样所得到的信号采样值$x(nT_s)$能准确地确定原信号$x(t)$。</p>
 <p>$(1)$式用带通信号的中心频率$f_0$和频带宽度B也可用式$(2)$表示：</p>
 <script type="math/tex; mode=display">
 f_0 = \frac{2n+1}{4}·f_s</script><p>式中，$f_0 = \frac{f_L+f_H}{2}$，$n$取能满足$f_s ≥ 2B$（$B$为频带宽度）的最大正整数。</p>
-<h2 id="软件无线电中的信号采样"><a href="#软件无线电中的信号采样" class="headerlink" title="软件无线电中的信号采样"></a>软件无线电中的信号采样</h2><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<h2 id="软件无线电中的信号采样"><a href="#软件无线电中的信号采样" class="headerlink" title="软件无线电中的信号采样"></a>软件无线电中的信号采样</h2><h3 id="允许过渡带混叠时的采样定理"><a href="#允许过渡带混叠时的采样定理" class="headerlink" title="允许过渡带混叠时的采样定理"></a>允许过渡带混叠时的采样定理</h3><p>我们已经知道，无论是Nyquist低通采样还是带通采样所需的采样速率$f_S$都必须大于处理带宽$B$的$2$倍，即满足：</p>
+<script type="math/tex; mode=display">
+f_s ≥ 2B</script><p>在之前的讨论中，ADC采样前的抗混叠滤波器都假定是理想滤波器，如图$(a)$所示，而实际中通常采样图$(b)$所示的矩形系数为$r,(r = \frac{B_r}{B})$梯形滤波器，$B_r$是由于滤波器不理想所造成的滤波器实际带宽。</p>
+<p>如果不考虑滤波器过渡带中的信号是可以混叠的，则采样速率必须取$f_s ≥ 2Br$。</p>
+<blockquote>
+<p>我们不希望由于滤波器的非理想而导致采样速度增加，因此必须想办法削弱滤波器非理想的影响。</p>
+</blockquote>
+<p><img src="/2021/02/13/chap2-%E8%BD%AF%E4%BB%B6%E6%97%A0%E7%BA%BF%E7%94%B5%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80/image-20210214145844333.png" alt="image-20210214145844333"></p>
+<p><strong>允许过渡带混叠时的采样定理</strong>：任何一个中心频率为$f_0$，带宽为$B$的某一带通信号$x(t)$，如果同时满足以下条件：</p>
+<script type="math/tex; mode=display">
+f_0 = \frac{2n+1}{4}f_s\ ,\ f_s≥(r+1)B</script><h3 id="软件无线电中的正交低通采样"><a href="#软件无线电中的正交低通采样" class="headerlink" title="软件无线电中的正交低通采样"></a>软件无线电中的正交低通采样</h3><blockquote>
+<p>软件无线电所覆盖的频率范围比较宽：$0.1MHz$~$3GHz$，直接采样Nyquist低通采样需要至少$6GHz$。</p>
+</blockquote>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
 <li>《软件无线电原理与应用》（第2版）第二章</li>
 </ol>
 
@@ -253,7 +268,10 @@ f_0 = \frac{2n+1}{4}·f_s</script><p>式中，$f_0 = \frac{f_L+f_H}{2}$，$n$取
     <a href="/2021/02/01/%E6%95%B0%E5%AD%97%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/" rel="prev" title="数字系统设计">
       <i class="fa fa-chevron-left"></i> 数字系统设计
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/03/20/%E4%BA%8C%E5%8F%89%E6%9F%A5%E6%89%BE%E6%A0%91/" rel="next" title="二叉查找树">
+      二叉查找树 <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -312,7 +330,7 @@ f_0 = \frac{2n+1}{4}·f_s</script><p>式中，$f_0 = \frac{f_L+f_H}{2}$，$n$取
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#软件无线电理论基础"><span class="nav-number">1.</span> <span class="nav-text">软件无线电理论基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#信号采样基本理论"><span class="nav-number">1.1.</span> <span class="nav-text">信号采样基本理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nyquist采样定理"><span class="nav-number">1.1.1.</span> <span class="nav-text">Nyquist采样定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带通采样定理"><span class="nav-number">1.1.2.</span> <span class="nav-text">带通采样定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件无线电中的信号采样"><span class="nav-number">1.2.</span> <span class="nav-text">软件无线电中的信号采样</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">1.3.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#软件无线电理论基础"><span class="nav-number">1.</span> <span class="nav-text">软件无线电理论基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#信号采样基本理论"><span class="nav-number">1.1.</span> <span class="nav-text">信号采样基本理论</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Nyquist采样定理"><span class="nav-number">1.1.1.</span> <span class="nav-text">Nyquist采样定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#带通采样定理"><span class="nav-number">1.1.2.</span> <span class="nav-text">带通采样定理</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件无线电中的信号采样"><span class="nav-number">1.2.</span> <span class="nav-text">软件无线电中的信号采样</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#允许过渡带混叠时的采样定理"><span class="nav-number">1.2.1.</span> <span class="nav-text">允许过渡带混叠时的采样定理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#软件无线电中的正交低通采样"><span class="nav-number">1.2.2.</span> <span class="nav-text">软件无线电中的正交低通采样</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">1.3.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -328,20 +346,20 @@ f_0 = \frac{2n+1}{4}·f_s</script><p>式中，$f_0 = \frac{f_L+f_H}{2}$，$n$取
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">12</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
